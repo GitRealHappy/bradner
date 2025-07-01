@@ -1,0 +1,303 @@
+// Hero Section
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url('/assets/images/hero-bg.jpg') center/cover no-repeat;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    color: $white;
+    text-align: center;
+    
+    .hero-content {
+        width: 100%;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+        margin-bottom: $spacing-md;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        
+        @media (min-width: $breakpoint-md) {
+            font-size: 3.5rem;
+        }
+    }
+    
+    .hero-subtitle {
+        font-size: $font-size-large;
+        margin-bottom: $spacing-xl;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        
+        @media (min-width: $breakpoint-md) {
+            font-size: $font-size-xl;
+        }
+    }
+    
+    .hero-cta {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-md;
+        align-items: center;
+        
+        @media (min-width: $breakpoint-sm) {
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+}
+
+// Featured Products Section
+.featured-products {
+    padding: $spacing-xl 0;
+    background-color: $gray-light;
+    
+    .section-title {
+        text-align: center;
+        margin-bottom: $spacing-xl;
+    }
+    
+    .products-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: $spacing-lg;
+        
+        @media (min-width: $breakpoint-md) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        @media (min-width: $breakpoint-lg) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+.product-card {
+    background-color: $white;
+    border-radius: $border-radius-lg;
+    box-shadow: $shadow-light;
+    overflow: hidden;
+    transition: all $transition-medium;
+    
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: $shadow-heavy;
+    }
+    
+    .product-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .product-content {
+        padding: $spacing-lg;
+    }
+    
+    .product-title {
+        margin-bottom: $spacing-sm;
+        color: $dark-brown;
+    }
+    
+    .product-description {
+        color: $smoke-gray;
+        margin-bottom: $spacing-md;
+    }
+    
+    .product-price {
+        font-weight: $font-weight-bold;
+        color: $primary-color;
+    }
+}
+
+// Contact Form
+.contact-form-container {
+    background-color: $white;
+    padding: $spacing-xl;
+    border-radius: $border-radius-lg;
+    box-shadow: $shadow-medium;
+}
+
+.contact-form {
+    .form-group {
+        margin-bottom: $spacing-lg;
+    }
+    
+    .form-label {
+        display: block;
+        margin-bottom: $spacing-xs;
+        font-weight: $font-weight-medium;
+        color: $dark-brown;
+    }
+    
+    .form-input,
+    .form-select,
+    .form-textarea {
+        width: 100%;
+        padding: $spacing-sm;
+        border: 2px solid $gray-medium;
+        border-radius: $border-radius-md;
+        font-size: $font-size-base;
+        transition: border-color $transition-fast;
+        
+        &:focus {
+            outline: none;
+            border-color: $primary-color;
+        }
+        
+        &:invalid {
+            border-color: $error;
+        }
+    }
+    
+    .form-textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+    
+    .form-submit {
+        @extend .btn;
+        @extend .btn-primary;
+        @extend .btn-large;
+        width: 100%;
+        
+        @media (min-width: $breakpoint-sm) {
+            width: auto;
+        }
+    }
+}
+
+// Gallery
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: $spacing-lg;
+    margin-top: $spacing-xl;
+}
+
+.gallery-item {
+    background-color: $white;
+    border-radius: $border-radius-lg;
+    overflow: hidden;
+    box-shadow: $shadow-light;
+    transition: all $transition-medium;
+    
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: $shadow-heavy;
+    }
+    
+    img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    
+    .gallery-caption {
+        padding: $spacing-md;
+        text-align: center;
+        color: $smoke-gray;
+        font-style: italic;
+        margin: 0;
+    }
+}
+
+// Location & Hours
+.location-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-xl;
+    margin-bottom: $spacing-xl;
+    
+    @media (min-width: $breakpoint-lg) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.location-card,
+.hours-card {
+    background-color: $gray-light;
+    padding: $spacing-xl;
+    border-radius: $border-radius-lg;
+    
+    h3 {
+        color: $primary-color;
+        margin-bottom: $spacing-lg;
+    }
+    
+    .info-item {
+        margin-bottom: $spacing-md;
+        
+        strong {
+            color: $dark-brown;
+        }
+    }
+}
+
+// Call-to-Action Sections
+.cta-section {
+    background-color: $primary-color;
+    color: $white;
+    padding: $spacing-xl 0;
+    text-align: center;
+    
+    .cta-title {
+        color: $white;
+        margin-bottom: $spacing-md;
+    }
+    
+    .cta-text {
+        font-size: $font-size-large;
+        margin-bottom: $spacing-xl;
+    }
+    
+    .btn-secondary {
+        background-color: $white;
+        color: $primary-color;
+        border-color: $white;
+        
+        &:hover {
+            background-color: transparent;
+            color: $white;
+            border-color: $white;
+        }
+    }
+}
+
+// Service Cards
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-lg;
+    
+    @media (min-width: $breakpoint-md) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media (min-width: $breakpoint-lg) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.service-card {
+    background-color: $white;
+    padding: $spacing-xl;
+    border-radius: $border-radius-lg;
+    box-shadow: $shadow-light;
+    text-align: center;
+    border-top: 4px solid $primary-color;
+    
+    .service-title {
+        color: $primary-color;
+        margin-bottom: $spacing-md;
+    }
+    
+    .service-description {
+        color: $smoke-gray;
+        margin-bottom: $spacing-lg;
+    }
+    
+    .service-details {
+        font-size: $font-size-small;
+        color: $gray-dark;
+        font-style: italic;
+    }
+} 

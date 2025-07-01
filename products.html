@@ -1,0 +1,116 @@
+---
+layout: page
+title: "Products & Services"
+subtitle: "Premium smoked meats and artisanal products crafted with traditional methods"
+description: "Explore our full range of smoked meats, sausages, and specialty items. Wholesale and retail options available with custom smoking services."
+---
+
+<div class="page-content">
+    <div class="container">
+        <!-- Product Categories -->
+        {% for category in site.data.products.categories %}
+        <section class="featured-products mb-5">
+            <h2 class="section-title">{{ category.name }}</h2>
+            <p class="text-center mb-4">{{ category.description }}</p>
+            
+            <div class="products-grid">
+                {% for product in category.products %}
+                                 <div class="product-card">
+                     {% if product.name contains 'Jerky' %}
+                         <img src="{{ '/assets/images/bradner1.png' | relative_url }}" 
+                              alt="{{ product.name }}" 
+                              class="product-image"
+                              loading="lazy">
+                     {% elsif product.name contains 'Sausage' or product.name contains 'Bratwurst' %}
+                         <img src="{{ '/assets/images/bradner2.png' | relative_url }}" 
+                              alt="{{ product.name }}" 
+                              class="product-image"
+                              loading="lazy">
+                     {% else %}
+                         <img src="{{ '/assets/images/products/' | append: product.name | downcase | replace: ' ', '-' | append: '.jpg' | relative_url }}" 
+                              alt="{{ product.name }}" 
+                              class="product-image"
+                              loading="lazy">
+                     {% endif %}
+                    <div class="product-content">
+                        <h3 class="product-title">{{ product.name }}</h3>
+                        <p class="product-description">{{ product.description }}</p>
+                        <p class="product-price">{{ product.price }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        {% endfor %}
+
+        <!-- Services Section -->
+        <section class="featured-products">
+            <h2 class="section-title">Our Services</h2>
+            <p class="text-center mb-4">Beyond our retail products, we offer specialized services for businesses and special events.</p>
+            
+            <div class="services-grid">
+                {% for service in site.data.products.services %}
+                <div class="service-card">
+                    <h3 class="service-title">{{ service.name }}</h3>
+                    <p class="service-description">{{ service.description }}</p>
+                    <p class="service-details">{{ service.details }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+
+        <!-- Ordering Information -->
+        <div class="location-info mt-5">
+            <div class="location-card">
+                <h3>Retail Orders</h3>
+                <p>Visit our store in Abbotsford to browse our full selection of fresh smoked products. We recommend calling ahead for large orders or specific items to ensure availability.</p>
+                <ul>
+                    <li>Fresh products available daily</li>
+                    <li>Special orders welcome</li>
+                    <li>Perfect for family meals and gatherings</li>
+                    <li>Gift packaging available</li>
+                </ul>
+                <a href="{{ '/location/' | relative_url }}" class="btn btn-secondary">Visit Store</a>
+            </div>
+            
+            <div class="hours-card">
+                <h3>Wholesale Orders</h3>
+                <p>We supply restaurants, delis, and specialty food stores throughout the Fraser Valley. Contact us to discuss volume pricing and delivery options.</p>
+                <ul>
+                    <li>Competitive wholesale pricing</li>
+                    <li>Reliable delivery schedule</li>
+                    <li>Consistent quality guarantee</li>
+                    <li>Custom product development</li>
+                </ul>
+                <a href="tel:{{ site.business.phone }}" class="btn btn-secondary">Call for Wholesale Info</a>
+            </div>
+        </div>
+
+        <!-- Quality Promise -->
+        <div class="cta-section" style="background-color: var(--gray-light); color: var(--dark-brown); margin-top: 3rem; border-radius: 12px;">
+            <div class="container">
+                <h2 class="cta-title" style="color: var(--primary-color);">Our Quality Promise</h2>
+                <p class="cta-text">Every product that leaves our smokehouse meets our rigorous standards for taste, texture, and quality. We stand behind everything we make.</p>
+                <ul style="text-align: left; max-width: 600px; margin: 0 auto;">
+                    <li>Premium ingredients sourced from trusted suppliers</li>
+                    <li>Traditional smoking methods for authentic flavor</li>
+                    <li>No artificial preservatives or fillers</li>
+                    <li>Fresh products made in small batches</li>
+                    <li>Satisfaction guaranteed</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact CTA -->
+<section class="cta-section">
+    <div class="container">
+        <h2 class="cta-title">Ready to Order?</h2>
+        <p class="cta-text">Contact us today to place your order or learn more about our products and services.</p>
+        <div class="hero-cta">
+            <a href="tel:{{ site.business.phone }}" class="btn btn-secondary btn-large">Call {{ site.business.phone }}</a>
+            <a href="{{ '/location/' | relative_url }}" class="btn btn-secondary btn-large">Visit Our Store</a>
+        </div>
+    </div>
+</section> 

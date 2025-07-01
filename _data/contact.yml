@@ -1,0 +1,35 @@
+# Contact information for Bradner Countryside Smokehouse
+# This file contains placeholder data to be updated with actual information
+
+business:
+  name: "Bradner Countryside Smokehouse"
+  tagline: "Artisanal Smoked Meats & Products"
+  
+address:
+  street: "[Street Address - To be provided]"
+  city: "Abbotsford"
+  province: "British Columbia"
+  postal_code: "[Postal Code - To be provided]"
+  country: "Canada"
+  
+contact:
+  phone: "[Phone Number - To be provided]"
+  email: "[Email Address - To be provided]"
+  
+hours:
+  monday: "[Hours - To be provided]"
+  tuesday: "[Hours - To be provided]"
+  wednesday: "[Hours - To be provided]"
+  thursday: "[Hours - To be provided]"
+  friday: "[Hours - To be provided]"
+  saturday: "[Hours - To be provided]"
+  sunday: "[Hours - To be provided]"
+  
+service_area:
+  primary: "Abbotsford, BC"
+  secondary: 
+    - "Aldergrove"
+    - "Langley"
+    - "Chilliwack"
+    - "Mission"
+    - "Fraser Valley" 

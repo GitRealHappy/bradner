@@ -1,0 +1,83 @@
+// Color Variables
+// Primary color scheme inspired by smokehouse/rustic theme
+$primary-color: #8B4513;        // Saddle brown - main brand color
+$secondary-color: #D2691E;      // Chocolate - accent color
+$dark-brown: #5D4037;           // Dark brown for text and headers
+$light-brown: #F5DEB3;          // Wheat - light background
+$smoke-gray: #696969;           // Dim gray - subtle text
+$cream: #FFF8DC;                // Cornsilk - background sections
+
+// Neutral colors
+$white: #FFFFFF;
+$black: #000000;
+$gray-light: #F5F5F5;
+$gray-medium: #CCCCCC;
+$gray-dark: #666666;
+
+// Semantic colors
+$success: #28A745;
+$warning: #FFC107;
+$error: #DC3545;
+$info: #17A2B8;
+
+// Typography
+$font-family-primary: 'Georgia', 'Times New Roman', serif;
+$font-family-secondary: 'Helvetica Neue', 'Arial', sans-serif;
+$font-family-accent: 'Brush Script MT', cursive;
+
+$font-size-base: 16px;
+$font-size-small: 14px;
+$font-size-large: 18px;
+$font-size-xl: 24px;
+$font-size-xxl: 32px;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+$line-height-base: 1.6;
+$line-height-tight: 1.2;
+
+// Spacing
+$spacing-xs: 0.5rem;   // 8px
+$spacing-sm: 1rem;     // 16px
+$spacing-md: 1.5rem;   // 24px
+$spacing-lg: 2rem;     // 32px
+$spacing-xl: 3rem;     // 48px
+$spacing-xxl: 4rem;    // 64px
+
+// Layout
+$container-max-width: 1200px;
+$container-padding: 20px;
+$header-height: 80px;
+$footer-height: 200px;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Border radius
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+$border-radius-round: 50%;
+
+// Shadows
+$shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+$shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.15);
+$shadow-heavy: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+// Transitions
+$transition-fast: 0.2s ease;
+$transition-medium: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+// Z-index
+$z-index-dropdown: 1000;
+$z-index-sticky: 1020;
+$z-index-fixed: 1030;
+$z-index-modal: 1040;
+$z-index-tooltip: 1070; 

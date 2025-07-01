@@ -1,0 +1,68 @@
+# Site settings
+title: "Bradner Countryside Smokehouse"
+description: "Artisanal smoked meats and products in Abbotsford, BC. Serving the Fraser Valley with quality wholesale and retail smokehouse products."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Business information
+business:
+  name: "Bradner Countryside Smokehouse"
+  phone: "[To be provided]"
+  email: "[To be provided]"
+  address: "[To be provided]"
+  city: "Abbotsford"
+  province: "British Columbia"
+  postal_code: "[To be provided]"
+  hours: "[To be provided]"
+  
+# Social media
+social:
+  instagram: "[To be provided]"
+  facebook: "[To be provided]"
+
+# SEO settings
+google_analytics: "[To be provided]"
+google_site_verification: "[To be provided]"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Collections
+collections:
+  products:
+    output: false
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Sass configuration
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Image optimization
+picture:
+  source: "assets/images"
+  output: "assets/images/generated"
+  markup: "picture"
+  presets:
+    default:
+      ppi: [1, 1.5, 2]
+      source_medium:
+        media: "(min-width: 768px)"
+        width: "800"
+      source_default:
+        width: "400" 

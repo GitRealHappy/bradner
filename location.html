@@ -1,0 +1,129 @@
+---
+layout: page
+title: "Location & Contact"
+subtitle: "Visit us in Abbotsford or get in touch"
+description: "Find Bradner Countryside Smokehouse in Abbotsford, BC. Store hours, directions, and contact information for orders and inquiries."
+---
+
+<div class="page-content">
+    <div class="container">
+        <!-- Location & Hours -->
+        <div class="location-info">
+            <div class="location-card">
+                <h3>Store Location</h3>
+                <div class="info-item">
+                    <strong>Address:</strong><br>
+                    {{ site.business.address }}<br>
+                    {{ site.business.city }}, {{ site.business.province }} {{ site.business.postal_code }}
+                </div>
+                <div class="info-item">
+                    <strong>Phone:</strong><br>
+                    <a href="tel:{{ site.business.phone }}">{{ site.business.phone }}</a>
+                </div>
+                <div class="info-item">
+                    <strong>Email:</strong><br>
+                    <a href="mailto:{{ site.business.email }}">{{ site.business.email }}</a>
+                </div>
+                <div class="info-item">
+                    <strong>Service Area:</strong><br>
+                    Abbotsford, Aldergrove, Langley, Chilliwack, Mission, and surrounding Fraser Valley communities
+                </div>
+            </div>
+            
+            <div class="hours-card">
+                <h3>Store Hours</h3>
+                <div class="info-item">
+                    <strong>Monday:</strong> {{ site.data.contact.hours.monday }}
+                </div>
+                <div class="info-item">
+                    <strong>Tuesday:</strong> {{ site.data.contact.hours.tuesday }}
+                </div>
+                <div class="info-item">
+                    <strong>Wednesday:</strong> {{ site.data.contact.hours.wednesday }}
+                </div>
+                <div class="info-item">
+                    <strong>Thursday:</strong> {{ site.data.contact.hours.thursday }}
+                </div>
+                <div class="info-item">
+                    <strong>Friday:</strong> {{ site.data.contact.hours.friday }}
+                </div>
+                <div class="info-item">
+                    <strong>Saturday:</strong> {{ site.data.contact.hours.saturday }}
+                </div>
+                <div class="info-item">
+                    <strong>Sunday:</strong> {{ site.data.contact.hours.sunday }}
+                </div>
+                <p style="margin-top: 1rem; font-style: italic;">
+                    <strong>Note:</strong> We recommend calling ahead for large orders or to confirm product availability.
+                </p>
+            </div>
+        </div>
+
+        <!-- Contact Form Section -->
+        <section class="featured-products">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="text-center mb-4">Have questions about our products or services? Send us a message and we'll get back to you promptly.</p>
+            
+            <div style="max-width: 600px; margin: 0 auto;">
+                {% include contact-form.html %}
+            </div>
+        </section>
+
+        <!-- Services Info -->
+        <div class="location-info">
+            <div class="location-card">
+                <h3>Pickup & Delivery</h3>
+                <p><strong>Store Pickup:</strong> Available during regular business hours. We recommend calling ahead for large orders.</p>
+                <p><strong>Local Delivery:</strong> Currently being developed. Delivery services will be available soon for the Fraser Valley area.</p>
+                <p><strong>Wholesale Delivery:</strong> Available for restaurant and retail partners. Contact us to discuss scheduling and minimum orders.</p>
+            </div>
+            
+            <div class="hours-card">
+                <h3>Special Orders</h3>
+                <p>Planning an event or need a custom order? We're happy to work with you to create the perfect selection of smoked products.</p>
+                <ul>
+                    <li>Custom smoking services</li>
+                    <li>Event catering portions</li>
+                    <li>Special occasion orders</li>
+                    <li>Bulk quantities available</li>
+                </ul>
+                <p>Call us at <a href="tel:{{ site.business.phone }}">{{ site.business.phone }}</a> to discuss your needs.</p>
+            </div>
+        </div>
+
+        <!-- Directions -->
+        <section class="featured-products">
+            <h2 class="section-title">Directions</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3 class="service-title">From Vancouver/Burnaby</h3>
+                    <p class="service-description">Take Highway 1 East to Abbotsford. Take Exit 92 and follow local directions to our store.</p>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-title">From Chilliwack</h3>
+                    <p class="service-description">Take Highway 1 West to Abbotsford. Take Exit 92 and follow local directions to our store.</p>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-title">From Langley/Aldergrove</h3>
+                    <p class="service-description">Take Highway 1 East or local roads to Abbotsford. We're conveniently located for easy access.</p>
+                </div>
+            </div>
+            <p class="text-center mt-4">
+                <strong>GPS Coordinates:</strong> [To be provided with actual address]<br>
+                <strong>Landmarks:</strong> Located near [local landmarks - to be added]
+            </p>
+        </section>
+    </div>
+</div>
+
+<!-- Contact CTA -->
+<section class="cta-section">
+    <div class="container">
+        <h2 class="cta-title">Visit Us Today</h2>
+        <p class="cta-text">Experience the quality and craftsmanship of our smoked products firsthand.</p>
+        <div class="hero-cta">
+            <a href="tel:{{ site.business.phone }}" class="btn btn-secondary btn-large">Call Now</a>
+            <a href="mailto:{{ site.business.email }}" class="btn btn-secondary btn-large">Send Email</a>
+        </div>
+    </div>
+</section> 

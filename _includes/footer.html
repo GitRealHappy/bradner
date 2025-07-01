@@ -1,0 +1,56 @@
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section footer-about">
+                <h3 class="footer-title">{{ site.title }}</h3>
+                <p class="footer-description">{{ site.description }}</p>
+                {% include social-links.html %}
+            </div>
+            
+            <div class="footer-section footer-contact">
+                <h3 class="footer-title">Contact Info</h3>
+                <div class="contact-info">
+                    <p class="contact-item">
+                        <strong>Phone:</strong> 
+                        <a href="tel:{{ site.business.phone }}">{{ site.business.phone }}</a>
+                    </p>
+                    <p class="contact-item">
+                        <strong>Email:</strong> 
+                        <a href="mailto:{{ site.business.email }}">{{ site.business.email }}</a>
+                    </p>
+                    <p class="contact-item">
+                        <strong>Address:</strong><br>
+                        {{ site.business.address }}<br>
+                        {{ site.business.city }}, {{ site.business.province }} {{ site.business.postal_code }}
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-section footer-hours">
+                <h3 class="footer-title">Hours</h3>
+                <div class="hours-info">
+                    {{ site.business.hours }}
+                </div>
+            </div>
+            
+            <div class="footer-section footer-nav">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-nav-list">
+                    {% for item in site.data.navigation.main %}
+                    <li class="footer-nav-item">
+                        <a href="{{ item.url | relative_url }}" class="footer-nav-link">
+                            {{ item.title }}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p class="copyright">
+                &copy; {{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer> 

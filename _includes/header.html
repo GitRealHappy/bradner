@@ -7,6 +7,7 @@
                 </a>
             </div>
             
+            {% unless page.body_class == 'coming-soon-page' %}
             <nav class="main-nav">
                 <ul class="nav-list">
                     {% for item in site.data.navigation.main %}
@@ -18,6 +19,7 @@
                     {% endfor %}
                 </ul>
             </nav>
+            {% endunless %}
             
             <div class="header-contact">
                 <a href="tel:{{ site.business.phone }}" class="contact-phone">
@@ -25,14 +27,17 @@
                 </a>
             </div>
             
+            {% unless page.body_class == 'coming-soon-page' %}
             <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
             </button>
+            {% endunless %}
         </div>
         
         <!-- Mobile Navigation -->
+        {% unless page.body_class == 'coming-soon-page' %}
         <nav class="mobile-nav">
             <ul class="mobile-nav-list">
                 {% for item in site.data.navigation.main %}
@@ -49,5 +54,6 @@
                 </li>
             </ul>
         </nav>
+        {% endunless %}
     </div>
 </header> 

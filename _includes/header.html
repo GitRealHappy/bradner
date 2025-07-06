@@ -2,7 +2,11 @@
     <div class="container">
         <div class="header-content">
             <div class="logo">
+                {% if page.body_class == 'home-page' %}
+                <a href="{{ '/full-site/' | relative_url }}">
+                {% else %}
                 <a href="{{ '/' | relative_url }}">
+                {% endif %}
                     <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}" class="logo-img">
                 </a>
             </div>
@@ -12,9 +16,15 @@
                 <ul class="nav-list">
                     {% for item in site.data.navigation.main %}
                     <li class="nav-item">
+                        {% if item.title == 'Home' and page.body_class == 'home-page' %}
+                        <a href="{{ '/full-site/' | relative_url }}" class="nav-link{% if page.url == '/full-site/' %} active{% endif %}">
+                            {{ item.title }}
+                        </a>
+                        {% else %}
                         <a href="{{ item.url | relative_url }}" class="nav-link{% if page.url == item.url %} active{% endif %}">
                             {{ item.title }}
                         </a>
+                        {% endif %}
                     </li>
                     {% endfor %}
                 </ul>
@@ -42,9 +52,15 @@
             <ul class="mobile-nav-list">
                 {% for item in site.data.navigation.main %}
                 <li class="mobile-nav-item">
+                    {% if item.title == 'Home' and page.body_class == 'home-page' %}
+                    <a href="{{ '/full-site/' | relative_url }}" class="mobile-nav-link">
+                        {{ item.title }}
+                    </a>
+                    {% else %}
                     <a href="{{ item.url | relative_url }}" class="mobile-nav-link">
                         {{ item.title }}
                     </a>
+                    {% endif %}
                 </li>
                 {% endfor %}
                 <li class="mobile-nav-item">

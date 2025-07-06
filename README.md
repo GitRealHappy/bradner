@@ -247,6 +247,38 @@ The full site currently shows "[To be provided]" for:
 4. **Testing** - Full site functionality and mobile responsiveness
 5. **Launch** - Switch to full site and remove staging setup
 
+### Staging Setup Details
+**Header Navigation Changes:**
+- Coming Soon page: No navigation menu (simplified header)
+- Full Site preview: Navigation "Home" redirects to `/full-site/` instead of `/`
+- Logo link: Redirects to `/full-site/` when on full-site preview
+- Mobile navigation: Same conditional logic as desktop
+
+**Launch Checklist (When Ready to Go Live):**
+1. **Replace index.html content:**
+   ```bash
+   cp full-site.html index.html
+   ```
+2. **Remove staging navigation logic from header:**
+   - Remove conditional checks for `page.body_class == 'home-page'`
+   - Restore standard navigation links
+   - Remove conditional logo redirects
+3. **Remove hidden preview link:**
+   - Remove "Preview" link from `_includes/footer.html`
+4. **Delete staging file:**
+   ```bash
+   rm full-site.html
+   ```
+5. **Update README:**
+   - Remove staging setup sections
+   - Update file structure documentation
+6. **Test and commit:**
+   ```bash
+   git add -A
+   git commit -m "Launch: Remove staging setup and activate full site"
+   git push origin main
+   ```
+
 ## Next Steps
 
 1. Review and approve this structural plan

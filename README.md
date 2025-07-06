@@ -133,7 +133,8 @@ BCSS/
 │   ├── navigation.yml
 │   ├── products.yml
 │   └── contact.yml
-├── index.html               # Home page
+├── index.html               # Temporary "Coming Soon" page
+├── full-site.html           # Complete site preview (staging)
 ├── about.html               # About page
 ├── products.html            # Products page
 ├── location.html            # Location page
@@ -196,6 +197,55 @@ BCSS/
 - **Hours:** [To be provided]
 - **Instagram:** [To be provided]
 - **Facebook:** [To be provided]
+
+## Current Build Plan & Staging Setup
+
+### Staging Approach (Temporary)
+The website is currently set up with a dual-page system to handle the construction phase:
+
+1. **Public Landing Page** (`index.html`)
+   - Simple "Coming Soon" page for public visitors
+   - Basic business information and contact details
+   - Professional messaging about site under construction
+   - Minimal content to avoid showing incomplete sections
+
+2. **Full Site Preview** (`full-site.html`)
+   - Complete website with all sections and features
+   - Contains "To be provided" placeholders for missing content
+   - Accessible via hidden link in footer for client review
+   - Shows the full scope of work and content requirements
+
+### Hidden Access Method
+- **Location:** Footer of the main site
+- **Method:** Subtle "Preview" link in copyright section
+- **Styling:** Blends with footer text (low opacity, no underline)
+- **Purpose:** Allows client to access full site without exposing it to public
+
+### Content Migration Plan
+Once all content is provided and approved:
+1. Replace `index.html` with content from `full-site.html`
+2. Remove the hidden preview link
+3. Delete `full-site.html` 
+4. Update README to remove staging references
+
+### Missing Content Tracking
+The full site currently shows "[To be provided]" for:
+- Business phone number
+- Business email address
+- Physical address and postal code
+- Operating hours
+- Social media links (Instagram, Facebook)
+- High-quality product photography
+- Detailed product descriptions and pricing
+- Business story and owner background
+- Google Analytics tracking code
+
+### Development Priority
+1. **Content Collection** - Gather all missing business information
+2. **Photography** - Professional product and location photos
+3. **Content Review** - Client approval of all text and messaging
+4. **Testing** - Full site functionality and mobile responsiveness
+5. **Launch** - Switch to full site and remove staging setup
 
 ## Next Steps
 

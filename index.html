@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "Home"
-description: "Bradner Countryside Smokehouse - Artisanal smoked meats and products in Abbotsford, BC. Quality wholesale and retail smokehouse products serving the Fraser Valley."
-body_class: "home-page"
+title: "Coming Soon"
+description: "Bradner Countryside Smokehouse - Artisanal smoked meats and products in Abbotsford, BC. Website coming soon."
+body_class: "coming-soon-page"
 ---
 
 <!-- Hero Section -->
@@ -11,106 +11,60 @@ body_class: "home-page"
         <div class="hero-content">
             <h1 class="hero-title">Bradner Countryside Smokehouse</h1>
             <p class="hero-subtitle">Artisanal Smoked Meats & Products in the Heart of Fraser Valley</p>
+            <p class="hero-description">Our new website is currently under construction. We're working hard to bring you a better online experience!</p>
             <div class="hero-cta">
-                <a href="{{ '/location/' | relative_url }}" class="btn btn-primary btn-large">Visit Our Store</a>
-                <a href="tel:{{ site.business.phone }}" class="btn btn-secondary btn-large">Call to Order</a>
+                <a href="tel:{{ site.business.phone }}" class="btn btn-primary btn-large">Call to Order</a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Featured Products Section -->
-<section class="featured-products">
-    <div class="container">
-        <h2 class="section-title">Our Featured Products</h2>
-        <div class="products-grid">
-            {% for category in site.data.products.categories limit:3 %}
-                         <div class="product-card">
-                 {% if category.name == 'Specialty Items' %}
-                     <img src="{{ '/assets/images/bradner1.png' | relative_url }}" 
-                          alt="{{ category.name }}" 
-                          class="product-image"
-                          loading="lazy">
-                 {% elsif category.name == 'Sausages' %}
-                     <img src="{{ '/assets/images/bradner2.png' | relative_url }}" 
-                          alt="{{ category.name }}" 
-                          class="product-image"
-                          loading="lazy">
-                 {% else %}
-                     <img src="{{ '/assets/images/products/' | append: category.name | downcase | replace: ' ', '-' | append: '.jpg' | relative_url }}" 
-                          alt="{{ category.name }}" 
-                          class="product-image"
-                          loading="lazy">
-                 {% endif %}
-                <div class="product-content">
-                    <h3 class="product-title">{{ category.name }}</h3>
-                    <p class="product-description">{{ category.description }}</p>
-                    <p class="product-price">Contact for pricing</p>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-        <div class="text-center mt-4">
-            <a href="{{ '/products/' | relative_url }}" class="btn btn-primary">View All Products</a>
-        </div>
-    </div>
-</section>
-
-<!-- About Teaser Section -->
+<!-- Coming Soon Message -->
 <section class="page-content">
     <div class="container">
-        <div class="location-info">
-            <div class="location-card">
-                <h3>Our Story</h3>
-                <p>At Bradner Countryside Smokehouse, we've been perfecting the art of smoking meats using traditional methods passed down through generations. Located in the heart of Abbotsford, we serve the Fraser Valley community with premium quality smoked products.</p>
-                <p>From our signature beef brisket to artisanal sausages, every product is crafted with care and attention to detail that you can taste in every bite.</p>
-                <a href="{{ '/about/' | relative_url }}" class="btn btn-secondary">Learn More About Us</a>
-            </div>
-            <div class="hours-card">
-                <h3>Visit Us</h3>
-                <div class="info-item">
-                    <strong>Address:</strong><br>
-                    {{ site.business.address }}<br>
-                    {{ site.business.city }}, {{ site.business.province }}
+        <div class="coming-soon-content">
+            <h2 class="section-title">Website Coming Soon</h2>
+            <p>We're putting the finishing touches on our new website to better serve you. In the meantime, you can still reach us directly for all your smoked meat needs.</p>
+            
+            <div class="contact-preview">
+                <h3>Get in Touch</h3>
+                <div class="contact-info">
+                    <p class="contact-item">
+                        <strong>Phone:</strong> 
+                        <a href="tel:{{ site.business.phone }}">{{ site.business.phone }}</a>
+                    </p>
+                    <p class="contact-item">
+                        <strong>Email:</strong> 
+                        <a href="mailto:{{ site.business.email }}">{{ site.business.email }}</a>
+                    </p>
+                    <p class="contact-item">
+                        <strong>Location:</strong><br>
+                        {{ site.business.address }}<br>
+                        {{ site.business.city }}, {{ site.business.province }}
+                    </p>
                 </div>
-                <div class="info-item">
-                    <strong>Hours:</strong><br>
-                    {{ site.business.hours }}
-                </div>
-                <div class="info-item">
-                    <strong>Phone:</strong><br>
-                    <a href="tel:{{ site.business.phone }}">{{ site.business.phone }}</a>
-                </div>
-                <a href="{{ '/location/' | relative_url }}" class="btn btn-secondary">Get Directions</a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Services Overview -->
+<!-- What We Do Section -->
 <section class="featured-products">
     <div class="container">
-        <h2 class="section-title">Our Services</h2>
-        <div class="services-grid">
-            {% for service in site.data.products.services %}
+        <h2 class="section-title">What We Do</h2>
+        <div class="services-preview">
             <div class="service-card">
-                <h3 class="service-title">{{ service.name }}</h3>
-                <p class="service-description">{{ service.description }}</p>
-                <p class="service-details">{{ service.details }}</p>
+                <h3>Artisanal Smoked Meats</h3>
+                <p>Premium quality smoked meats crafted using traditional methods and the finest ingredients.</p>
             </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
-<!-- Call to Action Section -->
-<section class="cta-section">
-    <div class="container">
-        <h2 class="cta-title">Ready to Experience Quality Smoked Meats?</h2>
-        <p class="cta-text">Visit our store in Abbotsford or call us to place your order today.</p>
-        <div class="hero-cta">
-            <a href="{{ '/location/' | relative_url }}" class="btn btn-secondary btn-large">Find Us</a>
-            <a href="tel:{{ site.business.phone }}" class="btn btn-secondary btn-large">{{ site.business.phone }}</a>
+            <div class="service-card">
+                <h3>Wholesale & Retail</h3>
+                <p>Serving restaurants, delis, and individual customers throughout the Fraser Valley.</p>
+            </div>
+            <div class="service-card">
+                <h3>Custom Orders</h3>
+                <p>Special orders and custom smoking services available. Call us to discuss your needs.</p>
+            </div>
         </div>
     </div>
 </section> 

@@ -11,7 +11,17 @@
                 </a>
             </div>
             
-            {% unless page.body_class == 'coming-soon-page' %}
+            {% if page.body_class contains 'coming-soon-page' %}
+            <div class="demo-nav">
+                <div class="demo-nav-buttons">
+                    <a href="{{ '/' | relative_url }}" class="demo-btn{% if page.demo_version == 'v1' or page.demo_version == nil %} active{% endif %}">Demo 1</a>
+                    <a href="{{ '/index-v2/' | relative_url }}" class="demo-btn{% if page.demo_version == 'v2' %} active{% endif %}">Demo 2</a>
+                    <a href="{{ '/index-v3/' | relative_url }}" class="demo-btn{% if page.demo_version == 'v3' %} active{% endif %}">Demo 3</a>
+                </div>
+            </div>
+            {% endif %}
+            
+            {% unless page.body_class contains 'coming-soon-page' %}
             <nav class="main-nav">
                 <ul class="nav-list">
                     {% for item in site.data.navigation.main %}
@@ -37,7 +47,7 @@
                 </a>
             </div>
             
-            {% unless page.body_class == 'coming-soon-page' %}
+            {% unless page.body_class contains 'coming-soon-page' %}
             <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
@@ -47,7 +57,7 @@
         </div>
         
         <!-- Mobile Navigation -->
-        {% unless page.body_class == 'coming-soon-page' %}
+        {% unless page.body_class contains 'coming-soon-page' %}
         <nav class="mobile-nav">
             <ul class="mobile-nav-list">
                 {% for item in site.data.navigation.main %}

@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://your-github-pages-url.com/sitemap.xml
+Sitemap: https://gitrealHappy.github.io/bradner/sitemap.xml
 
 # Disallow demo files and development directories
 Disallow: /full-site.html

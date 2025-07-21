@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://your-github-pages-url.com/sitemap.xml
+
+# Disallow demo files and development directories
+Disallow: /full-site.html
+Disallow: /_site/
+Disallow: /.sass-cache/
+Disallow: /.jekyll-cache/ 

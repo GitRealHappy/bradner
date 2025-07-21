@@ -1,0 +1,68 @@
+# SEO Configuration for Bradner Countryside Smokehouse
+
+# Business Information for Schema.org
+business:
+  name: "Bradner Countryside Smokehouse"
+  legal_name: "Bradner Countryside Smokehouse"
+  description: "Artisanal smoked meats and products in Abbotsford, BC. Serving the Fraser Valley with quality wholesale and retail smokehouse products."
+  founding_date: "2024"
+  
+# Location and Contact
+location:
+  street_address: "28660 Myrtle Ave"
+  city: "Abbotsford"
+  state: "British Columbia"
+  postal_code: ""
+  country: "Canada"
+  phone: "604-835-4035"
+  email: "jessicamcmath@gmail.com"
+
+# Business Categories
+categories:
+  - "Food & Beverage"
+  - "Meat Products"
+  - "Smokehouse"
+  - "Artisanal Foods"
+  - "Local Business"
+
+# Products/Services
+products:
+  - "Smoked Bacon"
+  - "Beef Jerky"
+  - "Pepperoni"
+  - "Smoked Sausages"
+  - "Hungarian Farmer Sausage"
+  - "Custom Smoking Services"
+  - "Holiday Hams"
+
+# Service Areas
+service_areas:
+  - "Abbotsford, BC"
+  - "Aldergrove, BC"
+  - "Langley, BC"
+  - "Chilliwack, BC"
+  - "Mission, BC"
+  - "Fraser Valley, BC"
+
+# Social Media (to be added when available)
+social:
+  facebook: ""
+  instagram: ""
+  
+# Keywords for SEO
+keywords:
+  primary:
+    - "smoked meats Abbotsford"
+    - "smokehouse British Columbia"
+    - "artisanal smoked products BC"
+    - "custom smoking services Abbotsford"
+    - "wholesale smoked meats Fraser Valley"
+  secondary:
+    - "Aldergrove smokehouse"
+    - "Langley smoked meats"
+    - "Chilliwack artisanal foods"
+    - "Mission BC specialty meats"
+    - "Fraser Valley local food"
+    - "beef jerky BC"
+    - "smoked bacon Abbotsford"
+    - "Hungarian sausage Fraser Valley" 

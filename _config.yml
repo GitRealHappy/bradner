@@ -8,11 +8,11 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 business:
   name: "Bradner Countryside Smokehouse"
   phone: "604-835-4035"
-  email: "[To be provided]"
-  address: "[To be provided]"
+  email: "jessicamcmath@gmail.com"
+  address: "28660 Myrtle Ave"
   city: "Abbotsford"
   province: "British Columbia"
-  postal_code: "[To be provided]"
+  postal_code: ""
   hours: "[To be provided]"
   
 # Social media

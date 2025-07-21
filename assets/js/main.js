@@ -143,4 +143,71 @@ document.addEventListener('DOMContentLoaded', function() {
             e.target.value = value;
         });
     });
+});
+
+// Contact popup functionality
+function openContactPopup() {
+    const popup = document.getElementById('contactPopup');
+    if (popup) {
+        popup.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+}
+
+function closeContactPopup() {
+    const popup = document.getElementById('contactPopup');
+    if (popup) {
+        popup.classList.remove('active');
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+}
+
+// Handle email address clicks
+document.addEventListener('DOMContentLoaded', function() {
+    const emailElement = document.querySelector('.email-address-large');
+    if (emailElement) {
+        emailElement.addEventListener('click', function() {
+            // Open email client
+            window.location.href = 'mailto:jessicamcmath@gmail.com';
+        });
+    }
+});
+
+// Copy email to clipboard (for disabled forms)
+function copyEmailToClipboard() {
+    const email = 'jessicamcmath@gmail.com';
+    navigator.clipboard.writeText(email).then(function() {
+        // Show success message
+        const button = event.target;
+        const originalText = button.textContent;
+        button.textContent = 'Copied!';
+        button.style.background = '#28a745';
+        
+        setTimeout(function() {
+            button.textContent = originalText;
+            button.style.background = '';
+        }, 2000);
+    }).catch(function() {
+        // Fallback for older browsers
+        const textArea = document.createElement('textarea');
+        textArea.value = email;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+        
+        const button = event.target;
+        const originalText = button.textContent;
+        button.textContent = 'Copied!';
+        setTimeout(function() {
+            button.textContent = originalText;
+        }, 2000);
+    });
+}
+
+// Close popup on escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeContactPopup();
+    }
 }); 

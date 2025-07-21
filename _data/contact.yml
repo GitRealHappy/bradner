@@ -6,24 +6,28 @@ business:
   tagline: "Artisanal Smoked Meats & Products"
   
 address:
-  street: "[Street Address - To be provided]"
+  street: "28660 Myrtle Ave"
   city: "Abbotsford"
   province: "British Columbia"
-  postal_code: "[Postal Code - To be provided]"
+  postal_code: ""
   country: "Canada"
   
 contact:
   phone: "604-835-4035"
-  email: "[Email Address - To be provided]"
+  email: "jessicamcmath@gmail.com"
+  address: "28660 Myrtle Ave"
+  city: "Abbotsford"
+  province: "British Columbia"
+  postal_code: ""
   
 hours:
-  monday: "[Hours - To be provided]"
-  tuesday: "[Hours - To be provided]"
-  wednesday: "[Hours - To be provided]"
-  thursday: "[Hours - To be provided]"
-  friday: "[Hours - To be provided]"
-  saturday: "[Hours - To be provided]"
-  sunday: "[Hours - To be provided]"
+  monday: "9:00 AM - 6:00 PM"
+  tuesday: "9:00 AM - 6:00 PM"
+  wednesday: "9:00 AM - 6:00 PM"
+  thursday: "9:00 AM - 6:00 PM"
+  friday: "9:00 AM - 6:00 PM"
+  saturday: "9:00 AM - 5:00 PM"
+  sunday: "Closed"
   
 service_area:
   primary: "Abbotsford, BC"

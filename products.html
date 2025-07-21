@@ -3,6 +3,7 @@ layout: page
 title: "Products & Services"
 subtitle: "Premium smoked meats and artisanal products crafted with traditional methods"
 description: "Explore our full range of smoked meats, sausages, and specialty items. Wholesale and retail options available with custom smoking services."
+body_class: "industrial-urban-serif"
 ---
 
 <div class="page-content">
@@ -43,63 +44,60 @@ description: "Explore our full range of smoked meats, sausages, and specialty it
         </section>
         {% endfor %}
 
-        <!-- Services Section -->
+        <!-- Seasonal Products Section -->
+        {% if site.data.products.seasonal %}
         <section class="featured-products">
-            <h2 class="section-title">Our Services</h2>
-            <p class="text-center mb-4">Beyond our retail products, we offer specialized services for businesses and special events.</p>
-            
-            <div class="services-grid">
-                {% for service in site.data.products.services %}
-                <div class="service-card">
-                    <h3 class="service-title">{{ service.name }}</h3>
-                    <p class="service-description">{{ service.description }}</p>
-                    <p class="service-details">{{ service.details }}</p>
+            <h2 class="section-title">SEASONAL OFFERINGS</h2>
+            {% for seasonal in site.data.products.seasonal %}
+            <div class="location-info">
+                <div class="location-card" style="grid-column: 1 / -1; max-width: 800px; margin: 0 auto;">
+                    <h3>{{ seasonal.name }}</h3>
+                    <p>{{ seasonal.description }}</p>
+                    <p><strong>{{ seasonal.details }}</strong></p>
+                    <p><em>{{ seasonal.note }}</em></p>
+                    <button onclick="openContactPopup()" class="btn btn-secondary">Pre-Order Holiday Ham</button>
                 </div>
-                {% endfor %}
             </div>
+            {% endfor %}
         </section>
+        {% endif %}
 
         <!-- Ordering Information -->
         <div class="location-info mt-5">
             <div class="location-card">
-                <h3>Retail Orders</h3>
-                <p>Visit our store in Abbotsford to browse our full selection of fresh smoked products. We recommend calling ahead for large orders or specific items to ensure availability.</p>
+                <h3>Visit Our Store</h3>
+                <p>Come see us in Bradner to browse our full selection of fresh products. We recommend contacting us ahead for large orders or specific items to ensure availability.</p>
                 <ul>
                     <li>Fresh products available daily</li>
-                    <li>Special orders welcome</li>
+                    <li>Custom orders welcome</li>
                     <li>Perfect for family meals and gatherings</li>
-                    <li>Gift packaging available</li>
+                    <li>Quality you can trust</li>
                 </ul>
                 <a href="{{ '/location/' | relative_url }}" class="btn btn-secondary">Visit Store</a>
             </div>
             
             <div class="hours-card">
-                <h3>Wholesale Orders</h3>
-                <p>We supply restaurants, delis, and specialty food stores throughout the Fraser Valley. Contact us to discuss volume pricing and delivery options.</p>
+                <h3>Ordering Information</h3>
+                <p>{{ site.data.products.ordering.note }}</p>
                 <ul>
-                    <li>Competitive wholesale pricing</li>
-                    <li>Reliable delivery schedule</li>
-                    <li>Consistent quality guarantee</li>
-                    <li>Custom product development</li>
+                    <li>Email us for pricing and availability</li>
+                    <li>Use our contact form for detailed inquiries</li>
+                    <li>Custom orders and special requests welcome</li>
+                    <li>Quick response to all email inquiries</li>
                 </ul>
-                <a href="tel:{{ site.business.phone }}" class="btn btn-secondary">Call for Wholesale Info</a>
+                <button onclick="openContactPopup()" class="btn btn-secondary">Contact Us Now</button>
             </div>
         </div>
 
-        <!-- Quality Promise -->
-        <div class="cta-section" style="background-color: var(--gray-light); color: var(--dark-brown); margin-top: 3rem; border-radius: 12px;">
-            <div class="container">
-                <h2 class="cta-title" style="color: var(--primary-color);">Our Quality Promise</h2>
-                <p class="cta-text">Every product that leaves our smokehouse meets our rigorous standards for taste, texture, and quality. We stand behind everything we make.</p>
-                <ul style="text-align: left; max-width: 600px; margin: 0 auto;">
-                    <li>Premium ingredients sourced from trusted suppliers</li>
-                    <li>Traditional smoking methods for authentic flavor</li>
-                    <li>No artificial preservatives or fillers</li>
-                    <li>Fresh products made in small batches</li>
-                    <li>Satisfaction guaranteed</li>
-                </ul>
+        <!-- Contact Form Section -->
+        <section class="featured-products">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="text-center mb-4">Have questions about our products or want to place a custom order? Send us a message and we'll get back to you promptly.</p>
+            
+            <div style="max-width: 600px; margin: 0 auto;">
+                {% include contact-form-disabled.html %}
             </div>
-        </div>
+        </section>
     </div>
 </div>
 
@@ -107,9 +105,9 @@ description: "Explore our full range of smoked meats, sausages, and specialty it
 <section class="cta-section">
     <div class="container">
         <h2 class="cta-title">Ready to Order?</h2>
-        <p class="cta-text">Contact us today to place your order or learn more about our products and services.</p>
+        <p class="cta-text">Contact us today to learn more about our products or place your order.</p>
         <div class="hero-cta">
-            <a href="tel:{{ site.business.phone }}" class="btn btn-secondary btn-large">Call {{ site.business.phone }}</a>
+            <button onclick="openContactPopup()" class="btn btn-secondary btn-large">Email Us Now</button>
             <a href="{{ '/location/' | relative_url }}" class="btn btn-secondary btn-large">Visit Our Store</a>
         </div>
     </div>

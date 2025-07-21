@@ -3,6 +3,7 @@ layout: page
 title: "About Us"
 subtitle: "Our passion for quality smoking techniques and premium ingredients"
 description: "Learn about Bradner Countryside Smokehouse's commitment to traditional smoking methods and quality artisanal products in Abbotsford, BC."
+body_class: "industrial-urban-serif"
 ---
 
 <div class="page-content">
@@ -11,11 +12,22 @@ description: "Learn about Bradner Countryside Smokehouse's commitment to traditi
         <div class="location-info">
             <div class="location-card">
                 <h3>Our Story</h3>
-                <p>Bradner Countryside Smokehouse was born from a passion for preserving traditional smoking techniques while serving the Fraser Valley community with exceptional quality products.</p>
+                <p><strong>Welcome to Bradner Countryside Smokehouse!</strong><br>
+                Where tradition, family, and flavor come together.</p>
                 
-                <p>Located in Abbotsford, British Columbia, we specialize in artisanal smoked meats using time-honored methods that have been refined over generations. Our commitment to quality means we source only the finest local ingredients and take the time necessary to create products that exceed expectations.</p>
+                <p>Nestled in the heart of Bradner, British Columbia, our locally-owned smokehouse is built on nearly three decades of experience and a deep-rooted love for community, craft, and quality.</p>
                 
-                <p>What started as a small operation has grown into a trusted source for both retail customers and wholesale partners throughout the Fraser Valley, including Aldergrove, Langley, Chilliwack, and Mission.</p>
+                <p>Founder Jessica Craig has been honing her skills since 1993, starting in a small butcher shop in Vancouver before continuing her journey in Abbotsford. Over the years, her passion for the trade grew—as did her dream of one day owning a business that reflected her values and heritage.</p>
+                
+                <p>Jessica's connection to Bradner runs deep—her family has lived here for over 80 years. In 2008, she married and began raising her own family in the same countryside she's always called home. By 2012, life on the farm was in full swing, complete with cows, chickens, horses, and even a curious mule. But through all the changes, her love for the butcher's craft never wavered.</p>
+                
+                <p>When the local butcher shop she cherished was changing ownership, Jessica stepped in to preserve its legacy. Out of that moment of determination, Bradner Countryside Smokehouse was born.</p>
+                
+                <p>We specialize in small-batch, artisanal pork and beef processing, with standout offerings like our signature smoked bacon and beef jerky—crafted from wholesome recipes.</p>
+                
+                <p>Whether you're here for the perfect breakfast cut or the rich, smoky flavor of our jerky, we're proud to share our passion and products with you—crafted with heart, heritage, and a whole lot of flavor.</p>
+                
+                <p><em>Thanks for stopping by—we're so glad you're here.</em></p>
             </div>
             
             <div class="hours-card">
@@ -81,14 +93,29 @@ description: "Learn about Bradner Countryside Smokehouse's commitment to traditi
     </div>
 </div>
 
+    <!-- Contact Form Section -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Contact Jessica</h2>
+            <p class="text-center mb-4" style="color: #cccccc; font-family: Georgia, serif; font-style: italic;">
+                Have questions about our story or want to learn more about our process? We'd love to hear from you.
+            </p>
+            
+            <div style="max-width: 600px; margin: 0 auto;">
+                {% include contact-form-disabled.html %}
+            </div>
+        </div>
+    </section>
+</div>
+
 <!-- Call to Action -->
 <section class="cta-section">
     <div class="container">
         <h2 class="cta-title">Experience Our Commitment to Quality</h2>
-        <p class="cta-text">Visit our store to see our smoking process in action and taste the difference quality makes.</p>
+        <p class="cta-text">Visit our store to see our process in action and taste the difference quality makes.</p>
         <div class="hero-cta">
+            <button onclick="openContactPopup()" class="btn btn-secondary btn-large">Get In Touch</button>
             <a href="{{ '/location/' | relative_url }}" class="btn btn-secondary btn-large">Visit Our Store</a>
-            <a href="{{ '/products/' | relative_url }}" class="btn btn-secondary btn-large">View Our Products</a>
         </div>
     </div>
 </section> 

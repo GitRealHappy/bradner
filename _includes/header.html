@@ -42,9 +42,9 @@
             {% endunless %}
             
             <div class="header-contact">
-                <a href="tel:{{ site.business.phone }}" class="contact-phone">
-                    Call Now
-                </a>
+                <button class="contact-email" onclick="openContactPopup()">
+                    Email Now
+                </button>
             </div>
             
             {% unless page.body_class contains 'coming-soon-page' %}
@@ -74,9 +74,9 @@
                 </li>
                 {% endfor %}
                 <li class="mobile-nav-item">
-                    <a href="tel:{{ site.business.phone }}" class="mobile-nav-link contact-link">
-                        Call Now
-                    </a>
+                    <button onclick="openContactPopup()" class="mobile-nav-link contact-link">
+                        Email Now
+                    </button>
                 </li>
             </ul>
         </nav>

@@ -35,10 +35,9 @@
         "description": "{{ site.description }}",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "{{ site.business.address }}",
-            "addressLocality": "{{ site.business.city }}",
-            "addressRegion": "{{ site.business.province }}",
-            "postalCode": "{{ site.business.postal_code }}",
+            "streetAddress": "28660 Myrtle Ave",
+            "addressLocality": "Abbotsford",
+            "addressRegion": "British Columbia",
             "addressCountry": "CA"
         },
         "telephone": "{{ site.business.phone }}",
@@ -57,6 +56,9 @@
     </main>
     
     {% include footer.html %}
+    
+    <!-- Contact Popup -->
+    {% include contact-popup.html %}
     
     <!-- JavaScript -->
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>

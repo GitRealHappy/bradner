@@ -2,54 +2,57 @@
 # This is placeholder data - to be updated with actual product information
 
 categories:
-  - name: "Smoked Meats"
-    description: "Premium smoked meats prepared with traditional methods"
+  - name: "BACONS"
+    description: "Premium smoked bacon crafted with traditional methods and quality ingredients"
     products:
-      - name: "Smoked Beef Brisket"
-        description: "Slow-smoked beef brisket with our signature rub"
-        price: "Contact for pricing"
-      - name: "Smoked Pork Shoulder"
-        description: "Tender pulled pork, perfect for sandwiches"
-        price: "Contact for pricing"
-      - name: "Smoked Ribs"
-        description: "Fall-off-the-bone tender ribs"
-        price: "Contact for pricing"
-  
-  - name: "Sausages"
-    description: "Artisanal sausages made from quality local ingredients"
-    products:
-      - name: "Traditional Bratwurst"
-        description: "Classic German-style bratwurst"
-        price: "Contact for pricing"
-      - name: "Italian Sausage"
-        description: "Spicy Italian sausage with herbs and spices"
-        price: "Contact for pricing"
-      - name: "Breakfast Sausage"
-        description: "Perfect for morning meals"
-        price: "Contact for pricing"
-  
-  - name: "Specialty Items"
-    description: "Unique smoked products and seasonal offerings"
-    products:
-      - name: "Smoked Salmon"
-        description: "Pacific Northwest salmon, cold-smoked to perfection"
-        price: "Contact for pricing"
-      - name: "Smoked Cheese"
-        description: "Local cheese enhanced with subtle smoke flavors"
-        price: "Contact for pricing"
-      - name: "Jerky"
-        description: "High-protein snack in various flavors"
-        price: "Contact for pricing"
+      - name: "Signature Smoked Bacon"
+        description: "Our flagship bacon, slow-smoked to perfection with Jessica's signature cure"
+        price: "Prices per pound listed soon"
+      - name: "Thick Cut Bacon"
+        description: "Extra thick slices for the ultimate bacon experience"
+        price: "Prices per pound listed soon"
 
-services:
-  - name: "Custom Smoking"
-    description: "We'll smoke your meat to your specifications"
-    details: "Bring your own meat and we'll smoke it with our expertise"
-  
-  - name: "Wholesale Orders"
-    description: "Bulk orders for restaurants and retailers"
-    details: "Special pricing available for volume orders"
-  
-  - name: "Catering Services"
-    description: "Perfect for events and special occasions"
-    details: "Let us provide smoked meats for your next gathering" 
+  - name: "JERKIES"
+    description: "Premium beef jerky made from wholesome recipes and quality cuts"
+    products:
+      - name: "Original Beef Jerky"
+        description: "Classic jerky with our traditional seasoning blend"
+        price: "Prices per pound listed soon"
+      - name: "Peppered Beef Jerky"
+        description: "Bold black pepper flavor with a perfect kick"
+        price: "Prices per pound listed soon"
+      - name: "Teriyaki Beef Jerky"
+        description: "Sweet and savory teriyaki glazed jerky"
+        price: "Prices per pound listed soon"
+
+  - name: "PEPPERONI"
+    description: "Artisanal pepperoni made with premium spices and traditional curing methods"
+    products:
+      - name: "Classic Pepperoni"
+        description: "Traditional pepperoni with the perfect balance of spice and smoke"
+        price: "Prices per pound listed soon"
+      - name: "Hot Pepperoni"
+        description: "Extra spicy pepperoni for those who like it hot"
+        price: "Prices per pound listed soon"
+
+  - name: "SMOKED SAUSAGES"
+    description: "Traditional smoked sausages including our popular Hungarian farmer sausage"
+    products:
+      - name: "Hungarian Farmer Sausage"
+        description: "Traditional Eastern European style sausage with authentic seasonings"
+        price: "Prices per pound listed soon"
+      - name: "Smokies"
+        description: "Classic smoked sausages perfect for grilling or snacking"
+        price: "Prices per pound listed soon"
+      - name: "Breakfast Sausage"
+        description: "Morning sausage links made with our special blend of spices"
+        price: "Prices per pound listed soon"
+
+seasonal:
+  - name: "Holiday Hams"
+    description: "Premium smoked hams available for pre-order during holiday seasons"
+    details: "Available for Thanksgiving, Easter, and Christmas. Pre-orders recommended to ensure availability."
+    note: "Contact us via email to place your holiday ham pre-order"
+
+ordering:
+  note: "Product prices per pound will be listed soon. For custom orders and special requests, please contact us via email or use our contact form." 

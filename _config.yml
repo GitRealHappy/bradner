@@ -1,7 +1,7 @@
 # Site settings
 title: "Bradner Countryside Smokehouse"
 description: "Artisanal smoked meats and products in Abbotsford, BC. Serving the Fraser Valley with quality wholesale and retail smokehouse products."
-baseurl: "/bradner" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Business information
@@ -31,8 +31,7 @@ seo:
   author: "Jessica Craig"
   keywords: "smoked meats Abbotsford, smokehouse British Columbia, artisanal smoked products BC, beef jerky, smoked bacon, Hungarian sausage, Fraser Valley"
   
-# Site URL (GitHub Pages URL)
-url: "https://gitrealHappy.github.io"
+
 
 # Build settings
 markdown: kramdown

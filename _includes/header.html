@@ -11,15 +11,7 @@
                 </a>
             </div>
             
-            {% if page.body_class contains 'coming-soon-page' %}
-            <div class="demo-nav">
-                <div class="demo-nav-buttons">
-                    <a href="{{ '/' | relative_url }}" class="demo-btn{% if page.demo_version == 'v1' or page.demo_version == nil %} active{% endif %}">Demo 1</a>
-                    <a href="{{ '/index-v2/' | relative_url }}" class="demo-btn{% if page.demo_version == 'v2' %} active{% endif %}">Demo 2</a>
-                    <a href="{{ '/index-v3/' | relative_url }}" class="demo-btn{% if page.demo_version == 'v3' %} active{% endif %}">Demo 3</a>
-                </div>
-            </div>
-            {% endif %}
+
             
             {% unless page.body_class contains 'coming-soon-page' %}
             <nav class="main-nav">
@@ -41,11 +33,13 @@
             </nav>
             {% endunless %}
             
+            {% unless page.body_class contains 'coming-soon-page' %}
             <div class="header-contact">
                 <button class="contact-email" onclick="openContactPopup()">
                     Email Now
                 </button>
             </div>
+            {% endunless %}
             
             {% unless page.body_class contains 'coming-soon-page' %}
             <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">

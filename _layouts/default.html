@@ -162,7 +162,9 @@
         {{ content }}
     </main>
     
+    {% unless page.body_class contains 'coming-soon-page' %}
     {% include footer.html %}
+    {% endunless %}
     
     <!-- Contact Popup -->
     {% include contact-popup.html %}

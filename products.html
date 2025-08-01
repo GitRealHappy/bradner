@@ -17,18 +17,28 @@ body_class: "industrial-urban-serif"
             <div class="products-grid">
                 {% for product in category.products %}
                                  <div class="product-card">
-                     {% if product.name contains 'Jerky' %}
-                         <img src="{{ '/assets/images/bradner1.png' | relative_url }}" 
+                     {% if product.name contains 'Bacon' %}
+                         <img src="{{ '/assets/images/bacon1.jpg' | relative_url }}" 
+                              alt="{{ product.name }}" 
+                              class="product-image"
+                              loading="lazy">
+                     {% elsif product.name contains 'Jerky' %}
+                         <img src="{{ '/assets/images/jerky1.png' | relative_url }}" 
                               alt="{{ product.name }}" 
                               class="product-image"
                               loading="lazy">
                      {% elsif product.name contains 'Sausage' or product.name contains 'Bratwurst' %}
-                         <img src="{{ '/assets/images/bradner2.png' | relative_url }}" 
+                         <img src="{{ '/assets/images/sausage1.png' | relative_url }}" 
+                              alt="{{ product.name }}" 
+                              class="product-image"
+                              loading="lazy">
+                     {% elsif product.name contains 'Ham' %}
+                         <img src="{{ '/assets/images/ham1.png' | relative_url }}" 
                               alt="{{ product.name }}" 
                               class="product-image"
                               loading="lazy">
                      {% else %}
-                         <img src="{{ '/assets/images/products/' | append: product.name | downcase | replace: ' ', '-' | append: '.jpg' | relative_url }}" 
+                         <img src="{{ '/assets/images/sausage2.png' | relative_url }}" 
                               alt="{{ product.name }}" 
                               class="product-image"
                               loading="lazy">

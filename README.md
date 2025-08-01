@@ -339,7 +339,7 @@ BCSS/
 ## Contact Information Placeholders
 
 - **Phone:** 604-835-4035
-- **Email:** jessicamcmath@gmail.com
+- **Email:** to be provided
 - **Address:** 28660 Myrtle Ave, Abbotsford, British Columbia
 - **Hours:** [To be provided]
 - **Instagram:** [To be provided]

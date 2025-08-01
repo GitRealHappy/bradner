@@ -168,14 +168,14 @@ document.addEventListener('DOMContentLoaded', function() {
     if (emailElement) {
         emailElement.addEventListener('click', function() {
             // Open email client
-            window.location.href = 'mailto:jessicamcmath@gmail.com';
+            window.location.href = 'mailto:to be provided';
         });
     }
 });
 
 // Copy email to clipboard (for disabled forms)
 function copyEmailToClipboard() {
-    const email = 'jessicamcmath@gmail.com';
+    const email = 'to be provided';
     navigator.clipboard.writeText(email).then(function() {
         // Show success message
         const button = event.target;
